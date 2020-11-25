@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="ChatsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="9pb-Uf-UrE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rw1-Vj-8IS">
+                                <rect key="frame" x="20" y="320.5" width="374" height="255"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sYz-zg-9rK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="255"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-Ss-P4c">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.21915132705479451" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zj6-WX-dpL">
+                                                <rect key="frame" x="0.0" y="65" width="374" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.21915132705479451" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbU-8p-oBI">
+                                                <rect key="frame" x="0.0" y="130" width="374" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.21915132705479451" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-fe-jPT">
+                                                <rect key="frame" x="0.0" y="195" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.26556392159999997" green="0.40228059770000002" blue="0.57047235969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="E2C-vZ-a71"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUk-YE-svx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.13944777397260275" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sYz-zg-9rK" secondAttribute="trailing" id="C7y-UG-Ia3"/>
+                                    <constraint firstItem="sYz-zg-9rK" firstAttribute="leading" secondItem="rw1-Vj-8IS" secondAttribute="leading" id="aYT-Um-JsQ"/>
+                                    <constraint firstItem="sYz-zg-9rK" firstAttribute="top" secondItem="rw1-Vj-8IS" secondAttribute="top" id="bp2-Ys-E8a"/>
+                                    <constraint firstAttribute="bottom" secondItem="sYz-zg-9rK" secondAttribute="bottom" id="v2X-V5-lSw"/>
+                                    <constraint firstAttribute="height" secondItem="sYz-zg-9rK" secondAttribute="height" id="wXc-to-3db"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="31j-T0-Zih">
+                                <rect key="frame" x="157" y="202" width="100" height="100"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="31j-T0-Zih" secondAttribute="height" multiplier="1:1" id="1Ym-zk-1HW"/>
+                                    <constraint firstAttribute="height" constant="100" id="891-ux-TLQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swip to Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-b8-T4d">
+                                <rect key="frame" x="20" y="585.5" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9pb-Uf-UrE" secondAttribute="bottom" id="84Z-bf-LCX"/>
+                            <constraint firstItem="ScG-b8-T4d" firstAttribute="trailing" secondItem="sYz-zg-9rK" secondAttribute="trailing" id="8Ay-Jr-MIO"/>
+                            <constraint firstItem="ScG-b8-T4d" firstAttribute="leading" secondItem="sYz-zg-9rK" secondAttribute="leading" id="NPV-AX-O2g"/>
+                            <constraint firstItem="9pb-Uf-UrE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PSK-L2-iMn"/>
+                            <constraint firstItem="rw1-Vj-8IS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="btm-Xy-mMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rw1-Vj-8IS" secondAttribute="trailing" constant="20" id="cUV-IZ-VhZ"/>
+                            <constraint firstItem="9pb-Uf-UrE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dsO-7z-qH7"/>
+                            <constraint firstItem="ScG-b8-T4d" firstAttribute="top" secondItem="rw1-Vj-8IS" secondAttribute="bottom" constant="10" id="fKV-w5-nHZ"/>
+                            <constraint firstItem="rw1-Vj-8IS" firstAttribute="top" secondItem="31j-T0-Zih" secondAttribute="bottom" constant="20" id="oYb-hx-DIF"/>
+                            <constraint firstItem="9pb-Uf-UrE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qI4-Tl-Cbz"/>
+                            <constraint firstItem="31j-T0-Zih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="reK-3W-wdG"/>
+                            <constraint firstItem="rw1-Vj-8IS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sG7-NK-CKb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailText" destination="zj6-WX-dpL" id="56D-Sx-7Uy"/>
+                        <outlet property="nameText" destination="jP3-Ss-P4c" id="TK5-YF-80W"/>
+                        <outlet property="passwordText" destination="vbU-8p-oBI" id="Mnd-TX-GbA"/>
+                        <outlet property="profileImage" destination="31j-T0-Zih" id="9hk-Ma-35G"/>
+                        <outlet property="signupBtn" destination="i4f-fe-jPT" id="mCK-Ty-fgV"/>
+                        <outlet property="welcomeStatus" destination="ScG-b8-T4d" id="Y4q-nY-VUx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="250" height="375"/>
+        <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
